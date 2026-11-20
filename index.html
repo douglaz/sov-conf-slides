@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-d485e995e51431133465165b3dbfa619.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2d6fad5103118fd49f61631414e702df.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -291,7 +291,7 @@
 </tbody>
 </table>
 </div>
-<p>They can <span class="accent">lock it or delete it</span>, and read most of it. End-to-end encryption hides the message, <span class="accent">not the metadata</span>.</p>
+<p>They can <span class="accent">lock it, delete it, read most of it</span>. Encryption hides the message, not the metadata.</p>
 <p>Yours means you hold the keys and can leave on your own terms.</p>
 <aside class="notes">
 <p>“Use of this new cybermoney will substantially free you from the power of the state.” The Sovereign Individual, 1997. They anticipated Bitcoin. But money is not the whole of property. Be precise here, the room will check. iMessage and WhatsApp encrypt message content end to end, so the provider can’t read those messages in transit. Metadata is another matter, and it differs by service: WhatsApp’s own policy collects who you interact with and when; Apple logs which contacts your phone looks up, for about a month, and says that doesn’t show a message was sent; Telegram’s ordinary chats aren’t end-to-end encrypted at all. And by default the iCloud backup is readable by Apple, including a copy of the Messages key, unless you turn on Advanced Data Protection. In the UK Apple withdrew that option in 2025 after a government demand. Apple is on this list on purpose: a company you like is still a company that can lock you out.</p>
@@ -309,12 +309,8 @@
 </section>
 <section id="it-was-never-the-law.-it-was-skill." class="slide level2">
 <h2>It was never the law. It was skill.</h2>
-<ul>
-<li>Self-custody is hard.</li>
-<li>Running your own node is hard.</li>
-<li>Running a Lightning node <span class="accent">safely</span> is out of reach for most people.</li>
-</ul>
-<div class="big">
+
+<img data-src="images/barrier.svg" style="width:88.0%" class="r-stretch"><div class="big">
 <p>That barrier is falling.</p>
 </div>
 <aside class="notes">
@@ -339,10 +335,7 @@
 <div class="big">
 <p>“I’ve run Linux on desktops and servers for 25 years. AI is better at it than I am.”</p>
 </div>
-<ul>
-<li>You describe what you want. It installs, configures, hardens and maintains.</li>
-<li>The platform underneath is <span class="accent">open</span>. Today that means Linux.</li>
-</ul>
+<p>You describe what you want. It does the rest, on an <span class="accent">open</span> platform.</p>
 <aside class="notes">
 <p>The personal line is the hook. Say it and move on. On Linux, the claim is “open”, not “Linux”: don’t oversell it. Two minutes for this section, both slides.</p>
 <style type="text/css">
@@ -359,12 +352,25 @@
 </section>
 <section id="you-were-already-following-instructions" class="slide level2">
 <h2>You were already following instructions</h2>
+<div class="cols">
+<div class="card">
+<p><span class="card-title">A tutorial</span></p>
 <ul>
-<li>Most of us self-hosted Bitcoin by following a tutorial we didn’t fully understand.</li>
-<li>A tutorial can’t answer back. An AI <span class="accent">explains each step, adapts it to your machine and checks the result</span>.</li>
+<li>written for someone else’s machine</li>
+<li>can’t answer back</li>
 </ul>
+</div>
+<div class="card">
+<p><span class="card-title">An AI</span></p>
+<ul>
+<li>explains each step</li>
+<li>adapts it to your machine</li>
+<li>checks the result</li>
+</ul>
+</div>
+</div>
 <div class="big">
-<p>If you’re going to follow something, follow a <span class="accent">frontier</span> AI.</p>
+<p>If you follow something, follow a <span class="accent">frontier</span> AI.</p>
 </div>
 <p>For keys and funds, still verify.</p>
 <aside class="notes">
@@ -426,22 +432,22 @@
 <tr class="even">
 <td>Devices seized at a border</td>
 <td>Lost</td>
-<td>Survives, if the phone is locked and the seed is backed up elsewhere</td>
+<td>Survives, if your seed is backed up</td>
 </tr>
 <tr class="odd">
-<td>Provider seizes or reads the machine</td>
+<td>Provider reaches the machine</td>
 <td>Not affected</td>
 <td><span class="accent">Exposed</span></td>
 </tr>
 <tr class="even">
-<td>You want to change jurisdiction</td>
+<td>You change jurisdiction</td>
 <td>Move yourself</td>
 <td>Move the server</td>
 </tr>
 </tbody>
 </table>
-<p>It is <span class="accent">redundancy and a choice of jurisdiction</span>, not immunity. It complements a homelab.</p>
-<p>A VPS is for learning. For anything serious, rent <span class="accent">bare metal</span>.</p>
+<p><span class="accent">Redundancy and a choice of jurisdiction</span>, not immunity.</p>
+<p>A VPS to learn. <span class="accent">Bare metal</span> for anything serious.</p>
 <aside class="notes">
 <p>No key is beyond reach, anywhere: what matters is what it costs to reach it, whether you’d know, and whether you can leave. On a VPS the provider can copy your disk and memory without leaving a trace. Bare metal takes away that hypervisor, but not the provider’s remote management console or rescue system: with an encrypted disk, the cheap ways in all need a reboot or someone in the room, so it costs more and you can notice. Watch your uptime, and never unlock after a reboot you didn’t cause. Don’t say “they can’t”. So: a VPS to learn, bare metal for anything serious, your own hardware alongside. Portable: paid in bitcoin, replaceable provider, replaceable jurisdiction. Keep this slide even if running late.</p>
 <style type="text/css">
@@ -462,14 +468,10 @@
 <section id="farseed" class="slide level2">
 <h2>Farseed</h2>
 <div class="big">
-<p>An AI agent that runs in your phone’s browser.</p>
+<p>An AI agent in your phone’s browser.</p>
 </div>
-<ul>
-<li><span class="accent">You pay two Lightning invoices</span> from your own wallet: one for its model, one for the server.</li>
-<li>It builds the server over SSH.</li>
-<li>It hands you a second agent that lives on that server.</li>
-</ul>
-<div class="source">
+
+<img data-src="images/farseed-flow.svg" style="width:100.0%" class="r-stretch"><div class="source">
 <p>Alpha proof of concept · github.com/douglaz/farseed</p>
 </div>
 <aside class="notes">
@@ -489,20 +491,50 @@
 <section id="demo" class="slide level2">
 <h2>Demo</h2>
 <div class="demo">
-<video src="media/demo.mp4" data-autoplay="" controls="" muted="" playsinline="" preload="auto">
-</video>
-<div class="demo-steps">
-<ol type="1">
-<li>Pay for AI credit: 2,000 sat</li>
-<li>Pay for the server: 100 sat</li>
-<li>The agent builds it</li>
-<li>Ask the server’s agent, in plain words: a Bitcoin node, a wallet balance, a Lightning node</li>
-</ol>
-<p><span class="dim">Recorded on a phone. 69 minutes of real time, in 2.</span></p>
+  <video id="demo-video" src="media/demo.mp4" data-autoplay="" controls="" muted="" playsinline="" preload="auto"></video>
+  <div class="demo-steps">
+    <div class="beat" data-from="0" data-to="14"><b>1</b> Pay for AI credit <span>2,000 sat</span></div>
+    <div class="beat" data-from="14" data-to="33.5"><b>2</b> Pay for a server <span>100 sat</span></div>
+    <div class="beat" data-from="33.5" data-to="68.8"><b>3</b> The agent builds it <span>8 min of work, one approval from me</span></div>
+    <div class="beat label" data-from="68.8" data-to="102.4"><b>4</b> Ask the server's agent</div>
+    <div class="beat ask" data-from="68.8" data-to="86.3">Set up a pruned Bitcoin node on this machine and connect it to my Tailscale. Tell me the latest block when it's synced.<span class="ans" data-from="85.1" data-to="9999">→ synced, block 976,784</span></div>
+    <div class="beat ask" data-from="86.3" data-to="91.3">What's the balance of this watch-only wallet: xpub6D7a…peu<span class="ans" data-from="90.6" data-to="9999">→ 5,000 sat. No seed or private key needed.</span></div>
+    <div class="beat ask" data-from="91.3" data-to="102.4">Add a Lightning node and give me a read-only link for Zeus over Tailscale.<span class="ans" data-from="95.7" data-to="9999">→ lnd 0.21.8, synced, read-only link</span></div>
+    <div class="beat" data-from="102.4" data-to="9999"><b>5</b> My phone shows the node</div>
+    <div class="demo-foot">69 minutes of real time, in 2</div>
+  </div>
 </div>
-</div>
+<script>
+(function () {
+  function init() {
+    var v = document.getElementById('demo-video');
+    if (!v) return;
+    var items = [].slice.call(document.querySelectorAll('.demo-steps [data-from]'));
+    // ?demo_t=NN in the address jumps to that second, for rehearsal and for checking the captions.
+    var jump = /[?&]demo_t=([\d.]+)/.exec(location.search);
+    var held = jump ? +jump[1] : null;
+    function update() {
+      if (held !== null && Math.abs(v.currentTime - held) < 1) held = null;
+      var t = held !== null ? held : v.currentTime;
+      items.forEach(function (el) {
+        var a = +el.dataset.from, b = +el.dataset.to;
+        el.classList.toggle('on', t >= a && t < b);
+        el.classList.toggle('done', t >= b);
+      });
+    }
+    v.addEventListener('timeupdate', update);
+    v.addEventListener('seeked', update);
+    if (held !== null) {
+      var go = function () { v.currentTime = held; };
+      if (v.readyState >= 1) go(); else v.addEventListener('loadedmetadata', go);
+    }
+    update();
+  }
+  if (document.readyState !== 'loading') init(); else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
 <aside class="notes">
-<p>Narrate live. The cut is two minutes; the real run took 69 minutes, 18 of them waiting on one sign-in step. 1 Open Farseed in a mobile browser. 2 Top up AI credit at PPQ, 2,000 sat, from Phoenix. 3 State the goal in plain language. 4 Pay 100 sat for the machine. 5 Time-lapse while the agent works, about 13 minutes real time. 6 Link T3 Code. 7 Three plain requests to Hermes: a pruned Bitcoin Core node, a watch-only balance, an lnd node with a read-only link for Zeus. 8 Closing shots: latest block, balance, Zeus showing the node synced.</p>
+<p>Narrate live. The cut is two minutes; the real run took 69 minutes, 18 of them waiting on one sign-in step. The list beside the video lights up in step with it, so point at it. 1 Top up AI credit at PPQ, 2,000 sat, from Phoenix. 2 Choose a machine and pay 100 sat. Nothing is typed in plain language up to here: it is all taps. 3 The agent builds the server: about 8 minutes of its own work, plus my approval of the T3 Code link, which took 18 minutes in this take because the first code expired. 4 Three plain requests to Hermes, shown word for word: a pruned Bitcoin node, a watch-only balance, a Lightning node with a read-only link for Zeus. 5 Zeus on the phone shows the node. Worth saying from the replies: the Bitcoin node “was seeded from the published pruned snapshot (sha256-verified before import), so it only had ~10 blocks to validate”; the balance needed “no seed or private key; only the xpub”. Hermes’s own words on the last one: “If you want a real node that can hold funds, that’s a different setup — it needs a seed backup and a funded channel, and this one deliberately has neither.”</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -540,13 +572,25 @@
 </section>
 <section id="said-plainly" class="slide level2">
 <h2>Said plainly</h2>
+<div class="cols">
+<div class="card">
+<p><span class="card-title">Real today</span></p>
 <ul>
-<li>It works end to end today, as an <span class="accent">alpha</span>, on a path prepared for it.</li>
-<li>The demo machine is a small VPS on our own instance of LNVPS, at a demo price. Fine to learn on; not what I’d run seriously.</li>
-<li>Hermes works from recipes that ship with the machine. It isn’t fully improvising.</li>
-<li>The Bitcoin node starts from a pruned chain copy that we host, then validates new blocks.</li>
-<li>The Lightning node is one you can look at: <span class="accent">no funds, no channels, no seed backup</span>, keys on a rented server.</li>
+<li>end to end, from a phone</li>
+<li>I paid both invoices by hand</li>
+<li>Bitcoin node synced, Lightning node up</li>
 </ul>
+</div>
+<div class="card">
+<p><span class="card-title">Not yet</span></p>
+<ul>
+<li>alpha, on one prepared path</li>
+<li>our own provider, a small VPS, a demo price</li>
+<li>recipes do most of the work</li>
+<li>Lightning node <span class="accent">unfunded, no seed backup</span></li>
+</ul>
+</div>
+</div>
 <aside class="notes">
 <p>Not fully improvising: the recipes do most of the work, but the agent sometimes does more than it was asked. One each way. Good: nobody asked for hardening, but when the Lightning node kept restarting, it found the cause and fixed it. Bad: asked for a connection link, it started building a QR-code tool “as a bonus” on a slow machine. That initiative is why you still verify: every result is checked by something other than the AI. Running a Lightning node safely with money in it is the next problem, not a solved one. Say the advice in one breath: don’t fund this node. It has no seed backup and its keys are on a VPS; in one run the agent even volunteered seed words in the chat. On a node you set up properly, with a seed you wrote down yourself and never typed into a chat, keep what you’d carry in your pocket. Decentralization still needs plebs running nodes, and with AI a pleb can run one at a semi-professional level. A public Lightning provider is implemented but not yet proven end to end.</p>
 <style type="text/css">
@@ -567,9 +611,9 @@
 <section id="isnt-an-online-server-unsafe" class="slide level2">
 <h2>“Isn’t an online server unsafe?”</h2>
 <ul>
-<li>Nothing is absolutely safe. Offline keys face theft, coercion, disaster and your own mistakes.</li>
-<li>AI helps the attacker and the watcher too. It doesn’t break good cryptography, and it makes hardening cheaper for defenders.</li>
-<li>The proposal is not “put everything online”. It is <span class="accent">use AI to run what should be online, well</span>.</li>
+<li>Nothing is absolutely safe. Offline keys get stolen, coerced and lost.</li>
+<li>AI helps attackers too. It doesn’t break good cryptography.</li>
+<li>Not “put everything online”. <span class="accent">Run what should be online, well.</span></li>
 </ul>
 <aside class="notes">
 <p>The demo node holds no funds. Two minutes.</p>
@@ -588,9 +632,9 @@
 <section id="isnt-rented-ai-giving-up-sovereignty" class="slide level2">
 <h2>“Isn’t rented AI giving up sovereignty?”</h2>
 <ul>
-<li>The ideal is your own inference, on hardware you control or rent bare.</li>
-<li>Until then, pay-per-use, privacy-focused vendors such as PPQ are the lesser evil.</li>
-<li>Even a big-tech frontier model hardening your infrastructure beats doing nothing, or doing little with a weaker local one.</li>
+<li>The ideal: your own inference.</li>
+<li>Until then: pay-per-use, privacy-focused vendors.</li>
+<li>A frontier model hardening your setup beats a weak local one doing little.</li>
 </ul>
 <p>Bootstrapping always starts on <span class="accent">something you don’t control</span>.</p>
 <aside class="notes">
@@ -612,10 +656,30 @@
 </section>
 <section id="section-5" class="slide level2 center">
 <h2></h2>
-<div class="big">
+<div class="cols">
+<div class="card">
+<p><span class="card-title">If you use it</span></p>
 <p>Rent one server. Pay in bitcoin. Let an AI help you run <span class="accent">one service</span> on it.</p>
 </div>
+<div class="card">
+<p><span class="card-title">If you build it</span></p>
+<p>We need more services that take <span class="accent">Lightning</span> and have an API an AI in a browser can call.</p>
+</div>
+</div>
 <p>A remote Linux server, operated by AI and paid for in bitcoin, is the missing piece of digital sovereignty.</p>
+<aside class="notes">
+<p>Two calls to action. For builders, be concrete: accept Lightning, offer an API to order and start a machine with no human clicking through, and let browser pages call it. Those are exactly the obstacles this proof of concept ran into.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="the-stack-by-name" class="slide level2">
 <h2>The stack, by name</h2>
@@ -707,6 +771,14 @@
 <li>What I’ll never suggest is a <span class="accent">proprietary system for what you run and hold your keys on</span>. Black boxes will be broken.</li>
 <li>A supplier you can replace tomorrow is a different matter.</li>
 <li>On mobile: GrapheneOS, or something similar.</li>
+</ul>
+</section>
+<section id="where-this-could-go" class="slide level2" data-visibility="uncounted">
+<h2>Where this could go</h2>
+<ul>
+<li>A <span class="accent">cosigning federation</span>, so a key on a server can’t spend alone: github.com/douglaz/btc-policy-spec</li>
+<li>Provisioning as its own service: github.com/douglaz/provisiond</li>
+<li>More providers that take Lightning and can be driven from a browser.</li>
 </ul>
 </section>
 <section id="where-are-my-keys-in-the-browser" class="slide level2" data-visibility="uncounted">

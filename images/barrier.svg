@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="Helvetica, Arial, sans-serif">
+  <g fill="#161b22" stroke="#3a4250" stroke-width="2">
+    <rect x="40" y="250" width="340" height="130" rx="10"/>
+    <rect x="430" y="160" width="340" height="220" rx="10"/>
+    <rect x="820" y="40" width="340" height="340" rx="10" stroke="#f7931a" stroke-width="4"/>
+  </g>
+  <g text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="32">
+    <text x="210" y="312">Hold your keys</text>
+    <text x="600" y="232">Run your node</text>
+    <text x="990" y="120">Run Lightning</text>
+    <text x="990" y="160" fill="#f7931a">safely</text>
+  </g>
+  <g text-anchor="middle" fill="#9aa4b2" font-size="24">
+    <text x="210" y="350">hard</text>
+    <text x="600" y="272">harder</text>
+    <text x="990" y="204">out of reach for most</text>
+  </g>
+  <text x="40" y="30" fill="#9aa4b2" font-size="22" letter-spacing="3">THE SKILL IT TAKES</text>
+</svg>
