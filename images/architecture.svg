@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f7931a"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#9aa4b2"/></marker>
+  </defs>
+  <!-- containers -->
+  <rect x="10" y="10" width="300" height="540" rx="16" fill="#12161c" stroke="#3a4250" stroke-width="2"/>
+  <text x="30" y="42" font-size="20" fill="#9aa4b2" letter-spacing="2">YOUR PHONE</text>
+  <rect x="870" y="10" width="320" height="540" rx="16" fill="#12161c" stroke="#3a4250" stroke-width="2"/>
+  <text x="890" y="42" font-size="20" fill="#9aa4b2" letter-spacing="2">YOUR SERVER · NIXOS</text>
+  <!-- phone boxes -->
+  <rect x="30" y="64" width="260" height="120" rx="12" fill="#1f2630" stroke="#f7931a" stroke-width="3"/>
+  <text x="160" y="112" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">Farseed</text>
+  <text x="160" y="146" font-size="19" fill="#c9d1d9" text-anchor="middle">agent + keys, in the browser</text>
+  <rect x="30" y="262" width="260" height="96" rx="12" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="160" y="304" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Phoenix</text>
+  <text x="160" y="336" font-size="21" fill="#c9d1d9" text-anchor="middle">your wallet</text>
+  <rect x="30" y="436" width="260" height="96" rx="12" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="160" y="478" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Zeus</text>
+  <text x="160" y="510" font-size="21" fill="#c9d1d9" text-anchor="middle">node remote</text>
+  <!-- middle boxes -->
+  <g fill="#161b22" stroke="#3a4250" stroke-width="2">
+    <rect x="490" y="74" width="220" height="90" rx="12"/>
+    <rect x="490" y="218" width="220" height="90" rx="12"/>
+    <rect x="490" y="346" width="220" height="90" rx="12"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="600" y="113" font-size="26" font-weight="bold" fill="#ffffff">SSH relay</text>
+    <text x="600" y="143" font-size="20" fill="#c9d1d9">carries, can't read</text>
+    <text x="600" y="257" font-size="26" font-weight="bold" fill="#ffffff">LNVPS</text>
+    <text x="600" y="287" font-size="20" fill="#c9d1d9">server provider</text>
+    <text x="600" y="385" font-size="26" font-weight="bold" fill="#ffffff">PPQ</text>
+    <text x="600" y="415" font-size="20" fill="#c9d1d9">AI inference</text>
+  </g>
+  <!-- server boxes -->
+  <rect x="890" y="64" width="280" height="120" rx="12" fill="#1f2630" stroke="#f7931a" stroke-width="3"/>
+  <text x="1030" y="112" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">Hermes</text>
+  <text x="1030" y="146" font-size="21" fill="#c9d1d9" text-anchor="middle">agent on the server</text>
+  <rect x="890" y="436" width="280" height="96" rx="12" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="1030" y="478" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Bitcoin Core · lnd</text>
+  <text x="1030" y="510" font-size="21" fill="#c9d1d9" text-anchor="middle">your node</text>
+  <!-- agent actions: orange solid -->
+  <g stroke="#f7931a" stroke-width="3" fill="none" marker-end="url(#o)">
+    <path d="M290 110 L488 110"/>
+    <path d="M710 110 L888 110"/>
+    <path d="M290 150 L488 246"/>
+    <path d="M290 174 L488 372"/>
+    <path d="M905 184 L712 380"/>
+    <path d="M1030 184 L1030 434"/>
+  </g>
+  <!-- payments and read-only: grey dashed -->
+  <g stroke="#9aa4b2" stroke-width="3" fill="none" stroke-dasharray="9 7" marker-end="url(#g)">
+    <path d="M290 296 L488 276"/>
+    <path d="M290 330 L488 400"/>
+    <path d="M290 490 L888 490"/>
+  </g>
+  <!-- labels -->
+  <g font-size="19" fill="#f7931a">
+    <text x="389" y="100" text-anchor="middle">SSH, end to end</text>
+    <text x="799" y="100" text-anchor="middle">builds it</text>
+    <text x="352" y="196">orders</text>
+    <text x="820" y="318">its own capped credit</text>
+    <text x="1042" y="316">sets up</text>
+  </g>
+  <g font-size="19" fill="#9aa4b2">
+    <text x="318" y="446">Lightning: you tap Pay</text>
+    <text x="589" y="480" text-anchor="middle">read-only</text>
+  </g>
+  <g font-size="19" fill="#f7931a"><text x="318" y="262"></text></g>
+  <!-- legend -->
+  <g font-size="18" fill="#9aa4b2">
+    <path d="M330 534 L380 534" stroke="#f7931a" stroke-width="3"/>
+    <text x="390" y="540">what the agents do</text>
+    <path d="M590 534 L640 534" stroke="#9aa4b2" stroke-width="3" stroke-dasharray="9 7"/>
+    <text x="650" y="540">what you do</text>
+  </g>
+</svg>
