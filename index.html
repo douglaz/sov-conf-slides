@@ -458,9 +458,10 @@
 </tr>
 </tbody>
 </table>
-<p>It is <span class="accent">redundancy and a choice of jurisdiction</span>, not immunity. It complements a homelab. It doesn’t replace one.</p>
+<p>It is <span class="accent">redundancy and a choice of jurisdiction</span>, not immunity. It complements a homelab.</p>
+<p>A VPS is for learning. For anything serious, rent <span class="accent">bare metal</span>.</p>
 <aside class="notes">
-<p>The server is rented, so the provider can seize or read it. Say that plainly. Portable: paid in bitcoin, replaceable provider, replaceable jurisdiction. Drop this slide third if running late.</p>
+<p>No key is beyond reach, anywhere: what matters is what it costs to reach it, whether you’d know, and whether you can leave. On a VPS the provider can copy your disk and memory from a console, silently. On bare metal it needs hands on the machine, and with an encrypted disk it means a reboot you would notice. So: a VPS to learn, bare metal for anything serious, your own hardware alongside. Portable: paid in bitcoin, replaceable provider, replaceable jurisdiction. Keep this slide even if running late.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -568,7 +569,7 @@
 <h2>Said plainly</h2>
 <ul>
 <li>It works end to end today, as an <span class="accent">alpha</span>, on a path prepared for it.</li>
-<li>The hosting provider in the demo is our own instance of LNVPS, at a demo price.</li>
+<li>The demo machine is a small VPS on our own instance of LNVPS, at a demo price. Fine to learn on; not what I’d run seriously.</li>
 <li>Hermes works from recipes that ship with the machine. It isn’t fully improvising.</li>
 <li>The Bitcoin node starts from a pruned chain copy that we host, then validates new blocks.</li>
 <li>The Lightning node is one you can look at: <span class="accent">no funds, no channels, no seed backup</span>, keys on a rented server.</li>
