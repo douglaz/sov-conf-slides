@@ -241,25 +241,7 @@
 <p>Katie The Russian, “Short The State”, Bitcoin Magazine (2022)</p>
 </div>
 <aside class="notes">
-<p>The conclusion of the ladder. Let it land and move on.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="three-steps-of-mobility" class="slide level2">
-<h2>Three steps of mobility</h2>
-
-<img data-src="images/ladder.svg" style="width:100.0%" class="r-stretch"><p>So how much of your life is actually in cyberspace, <span class="accent">under your control</span>?</p>
-<aside class="notes">
-<p>Bridge into the gap.</p>
+<p>The conclusion of the ladder. Let it land, then ask the bridge question aloud: “So how much of your life is actually in cyberspace, under your control?”</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -309,10 +291,10 @@
 </tbody>
 </table>
 </div>
-<p>They can <span class="accent">lock it or delete it</span>, and read most of it. Even where messages are end-to-end encrypted, they keep the <span class="accent">metadata</span>: who you talk to, and when.</p>
-<p>Only what you hold the keys to is yours.</p>
+<p>They can <span class="accent">lock it or delete it</span>, and read most of it. End-to-end encryption hides the message, <span class="accent">not the metadata</span>.</p>
+<p>Yours means you hold the keys and can leave on your own terms.</p>
 <aside class="notes">
-<p>“Use of this new cybermoney will substantially free you from the power of the state.” The Sovereign Individual, 1997. They anticipated Bitcoin. But money is not the whole of property. Be precise here, the room will check. iMessage and WhatsApp encrypt message content end to end, so the provider can’t read those messages in transit. It still holds the metadata: who you talk to, and when. And by default the iCloud backup is readable by Apple, including a copy of the Messages key, unless you turn on Advanced Data Protection. In the UK Apple withdrew that option in 2025 after a government demand. Apple is on this list on purpose: a company you like is still a company that can lock you out.</p>
+<p>“Use of this new cybermoney will substantially free you from the power of the state.” The Sovereign Individual, 1997. They anticipated Bitcoin. But money is not the whole of property. Be precise here, the room will check. iMessage and WhatsApp encrypt message content end to end, so the provider can’t read those messages in transit. Metadata is another matter, and it differs by service: WhatsApp’s own policy collects who you interact with and when; Apple logs which contacts your phone looks up, for about a month, and says that doesn’t show a message was sent; Telegram’s ordinary chats aren’t end-to-end encrypted at all. And by default the iCloud backup is readable by Apple, including a copy of the Messages key, unless you turn on Advanced Data Protection. In the UK Apple withdrew that option in 2025 after a government demand. Apple is on this list on purpose: a company you like is still a company that can lock you out.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -333,7 +315,7 @@
 <li>Running a Lightning node <span class="accent">safely</span> is out of reach for most people.</li>
 </ul>
 <div class="big">
-<p>That barrier just fell.</p>
+<p>That barrier is falling.</p>
 </div>
 <aside class="notes">
 <p>Keep “a safely funded Lightning node” as a problem here. The demo does not solve it, so don’t promise it.</p>
@@ -444,7 +426,7 @@
 <tr class="even">
 <td>Devices seized at a border</td>
 <td>Lost</td>
-<td>Survives</td>
+<td>Survives, if the phone is locked and the seed is backed up elsewhere</td>
 </tr>
 <tr class="odd">
 <td>Provider seizes or reads the machine</td>
@@ -480,10 +462,10 @@
 <section id="farseed" class="slide level2">
 <h2>Farseed</h2>
 <div class="big">
-<p>An AI agent that runs entirely in your phone’s browser.</p>
+<p>An AI agent that runs in your phone’s browser.</p>
 </div>
 <ul>
-<li>It pays for its own model and server over Lightning, <span class="accent">with your approval</span>.</li>
+<li><span class="accent">You pay two Lightning invoices</span> from your own wallet: one for its model, one for the server.</li>
 <li>It builds the server over SSH.</li>
 <li>It hands you a second agent that lives on that server.</li>
 </ul>
@@ -492,23 +474,6 @@
 </div>
 <aside class="notes">
 <p>“This sounds like a project for experts. Cypherpunks write code, so let me show you it from a phone.” Eric Hughes, 1993. If the recording shows the old name anywhere: “Farseed, formerly Tau Web”, once.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="how-it-fits-together" class="slide level2">
-<h2>How it fits together</h2>
-
-<img data-src="images/architecture.svg" style="width:100.0%" class="r-stretch"><aside class="notes">
-<p>Keys and credentials stay in the browser on the phone. Money authority stays in the wallet. The relay and PPQ hold no keys to the server. Hermes has authority only on that server. Both agents use DeepSeek V4.1-Flash through PPQ. Don’t sell that as “a small model is enough”: it works here because the agent follows prepared recipes. A cheap model got the server up; the first thing I’d have it do is set up a frontier one.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -543,13 +508,12 @@
 </section>
 <section id="what-just-happened" class="slide level2">
 <h2>What just happened</h2>
-<ul>
-<li>The agent ran <span class="accent">in my browser</span> and held the keys. Only the model calls went out.</li>
-<li>I approved <span class="accent">every payment</span> by hand, in Lightning.</li>
-<li>The result is a server I control, with its own agent I can keep talking to.</li>
-</ul>
+
+<img data-src="images/architecture.svg" style="width:100.0%" class="r-stretch"><div class="small">
+<p>This run: DeepSeek V4.1-Flash through PPQ, on recipes I wrote. For open-ended work and hardening, use a <span class="accent">frontier model</span>.</p>
+</div>
 <aside class="notes">
-<p>Ninety seconds, over the architecture picture if there is time to flip back.</p>
+<p>One minute, pointing at the picture. The agent and my SSH keys stayed in my browser. What went out: model calls to PPQ, the server order to LNVPS, and an encrypted SSH session through our relay. T3 Code’s sign-in and Tailscale came after. The model host saw every command and its output; the relay saw only encrypted SSH. I paid both Lightning invoices by hand. Hermes has authority only on that server. On the model: don’t rank it and don’t call it cheap or weak. It is a strong open-weights model that is not at the frontier, and it was enough here because the recipes did the work.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -575,28 +539,7 @@
 <li>The Lightning node is one you can look at: <span class="accent">no funds, no channels, no seed backup</span>, keys on a rented server.</li>
 </ul>
 <aside class="notes">
-<p>Not fully improvising: the recipes do most of the work, but the agent sometimes does more than it was asked. One each way. Good: nobody asked for hardening, but when the Lightning node kept restarting, it found the cause and fixed it. Bad: asked for a connection link, it started building a QR-code tool “as a bonus” on a slow machine. That initiative is why you still verify: every result is checked by something other than the AI. Running a Lightning node safely with money in it is the next problem, not a solved one. Say the advice in one breath: it’s a hot wallet, keep on it what you’d carry in your pocket. Try it anyway, cautiously: decentralization still needs plebs running nodes, and with AI a pleb can run one at a semi-professional level. A public Lightning provider is implemented but not yet proven end to end.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-hard-part-is-the-browser" class="slide level2">
-<h2>The hard part is the browser</h2>
-<ul>
-<li>Providers that take bitcoin rarely offer an API a browser can use to rent a machine with no human clicking through.</li>
-<li>A browser can’t open SSH by itself. It needs a relay, so the page must <span class="accent">know the server’s key in advance</span>.</li>
-</ul>
-<p>From a Linux machine none of this is hard. From a phone browser is what makes it reach ordinary people.</p>
-<aside class="notes">
-<p>Drop this slide second if running late.</p>
+<p>Not fully improvising: the recipes do most of the work, but the agent sometimes does more than it was asked. One each way. Good: nobody asked for hardening, but when the Lightning node kept restarting, it found the cause and fixed it. Bad: asked for a connection link, it started building a QR-code tool “as a bonus” on a slow machine. That initiative is why you still verify: every result is checked by something other than the AI. Running a Lightning node safely with money in it is the next problem, not a solved one. Say the advice in one breath: don’t fund this node. It has no seed backup and its keys are on a VPS; in one run the agent even volunteered seed words in the chat. On a node you set up properly, with a seed you wrote down yourself and never typed into a chat, keep what you’d carry in your pocket. Decentralization still needs plebs running nodes, and with AI a pleb can run one at a semi-professional level. A public Lightning provider is implemented but not yet proven end to end.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -681,7 +624,7 @@
 <tbody>
 <tr class="odd">
 <td>Agent in the browser</td>
-<td><strong>Farseed</strong> (alpha) · github.com/douglaz/farseed</td>
+<td><strong>Farseed</strong> (alpha, MIT/Apache-2.0) · github.com/douglaz/farseed</td>
 </tr>
 <tr class="even">
 <td>Agent on the server</td>
@@ -697,11 +640,11 @@
 </tr>
 <tr class="odd">
 <td>Server, paid in Lightning</td>
-<td>LNVPS (our own instance of the open-source software)</td>
+<td>LNVPS (our own instance, not lnvps.net)</td>
 </tr>
 <tr class="even">
 <td>SSH relay for the browser</td>
-<td>paid-tcp-relay · github.com/douglaz/paid-tcp-relay</td>
+<td>paid-tcp-relay (MIT/Apache-2.0) · github.com/douglaz/paid-tcp-relay</td>
 </tr>
 <tr class="odd">
 <td>Operating system</td>
@@ -722,7 +665,7 @@
 </tbody>
 </table>
 <aside class="notes">
-<p>The slide people photograph. Source public on GitHub. No licence line until the licence files are in the repositories.</p>
+<p>The slide people photograph. Don’t read it out. Source public on GitHub.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -741,7 +684,8 @@
 <section id="is-a-lightning-node-safe-its-a-hot-wallet." class="slide level2" data-visibility="uncounted">
 <h2>Is a Lightning node safe? It’s a hot wallet.</h2>
 <ul>
-<li>Yes, it is a hot wallet. <span class="accent">Keep on it what you’d carry in your pocket.</span></li>
+<li>Yes, it is a hot wallet. <span class="accent">Not this demo node</span>: no seed backup, keys on a VPS.</li>
+<li>On one you set up properly, with a seed you wrote down yourself, keep what you’d carry in your pocket.</li>
 <li>Don’t put much there until AI has helped you build the routine around it: CVE alerts, fast patching, backups.</li>
 <li>It is a big learning opportunity, for Bitcoin and for AI. Try it, cautiously.</li>
 <li>Decentralization still needs plebs running nodes. With AI, a pleb can run one at a <span class="accent">semi-professional level</span>.</li>

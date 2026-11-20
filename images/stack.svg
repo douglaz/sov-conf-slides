@@ -39,6 +39,11 @@
   </g>
   <circle cx="100" cy="150" r="54" fill="#161b22" stroke="#f7931a" stroke-width="3"/>
   <text x="100" y="162" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">You</text>
-  <text x="100" y="244" font-size="24" fill="#c9d1d9" text-anchor="middle">hold the keys</text>
+  <g font-size="22" fill="#c9d1d9" text-anchor="middle">
+    <text x="100" y="240">decide, pay,</text>
+    <text x="100" y="268">can leave.</text>
+    <text x="100" y="312" fill="#f7931a">Cold keys</text>
+    <text x="100" y="340" fill="#f7931a">stay off it.</text>
+  </g>
   <path d="M156 138 L244 128" stroke="#f7931a" stroke-width="3" fill="none" marker-end="url(#a)"/>
 </svg>
