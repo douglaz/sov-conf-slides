@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-93818b59b7d5a321dba8ca5e298ae86e.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2cd3a99e4aea667c23633ba823fad756.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -314,7 +314,7 @@
 <p>That barrier is falling.</p>
 </div>
 <aside class="notes">
-<p>Keep “a safely funded Lightning node” as a problem here. The demo does not solve it, so don’t promise it.</p>
+<p>Keep “run Lightning safely” as the hard step here. Don’t promise it is solved.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -551,10 +551,10 @@
 <h2>What just happened</h2>
 <p><img data-src="images/architecture.svg" class="diagram tall"></p>
 <div class="small">
-<p>This run: DeepSeek V4.1-Flash through PPQ, on recipes I wrote. For open-ended work and hardening, use a <span class="accent">frontier model</span>.</p>
+<p>This run: DeepSeek V4.1-Flash through PPQ, on recipes I wrote.</p>
 </div>
 <aside class="notes">
-<p>One minute, pointing at the picture. The agent and my SSH keys stayed in my browser. What went out: model calls to PPQ, the server order to LNVPS, and an encrypted SSH session through our relay. T3 Code’s sign-in and Tailscale came after. The model host saw every command and its output; the relay saw only encrypted SSH. I paid both Lightning invoices by hand. Hermes has authority only on that server. On the model: don’t rank it and don’t call it cheap or weak. It is a strong open-weights model that is not at the frontier, and it was enough here because the recipes did the work.</p>
+<p>One minute, pointing at the picture. The agent and my SSH keys stayed in my browser. What went out: model calls to PPQ, the server order to LNVPS, and an encrypted SSH session through our relay. T3 Code’s sign-in and Tailscale came after. The model host saw every command and its output; the relay saw only encrypted SSH. I paid both Lightning invoices by hand. Hermes has authority only on that server. On the model: name it here and move on. The next slide is about which model to use.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -567,32 +567,53 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="whats-real-and-what-isnt-yet" class="slide level2 section-title">
-<h2>What’s real and what isn’t yet</h2>
-</section>
-<section id="said-plainly" class="slide level2">
-<h2>Said plainly</h2>
-<div class="cols">
-<div class="card">
-<p><span class="card-title">Real today</span></p>
-<ul>
-<li>end to end, from a phone</li>
-<li>I paid both invoices by hand</li>
-<li>Bitcoin node synced, Lightning node up</li>
-</ul>
-</div>
-<div class="card">
-<p><span class="card-title">Not yet</span></p>
-<ul>
-<li>alpha, on one prepared path</li>
-<li>our own provider, a small VPS, a demo price</li>
-<li>recipes do most of the work</li>
-<li>Lightning node <span class="accent">unfunded, no seed backup</span></li>
-</ul>
-</div>
+<section id="which-ai-should-run-it" class="slide level2">
+<h2>Which AI should run it?</h2>
+<p><img data-src="images/models.svg" class="diagram tall"></p>
+<p>DeepSeek follows a recipe. For the main agent, use a <span class="accent">frontier model</span>.</p>
+<div class="small">
+<p>Games nobody explains to the model (ARC-AGI-3): Fable 5.2 scores 81%, DeepSeek V4.1 Flash 0.2%.</p>
 </div>
 <aside class="notes">
-<p>Not fully improvising: the recipes do most of the work, but the agent sometimes does more than it was asked. One each way. Good: nobody asked for hardening, but when the Lightning node kept restarting, it found the cause and fixed it. Bad: asked for a connection link, it started building a QR-code tool “as a bonus” on a slow machine. That initiative is why you still verify: every result is checked by something other than the AI. Running a Lightning node safely with money in it is the next problem, not a solved one. Say the advice in one breath: don’t fund this node. It has no seed backup and its keys are on a VPS; in one run the agent even volunteered seed words in the chat. On a node you set up properly, with a seed you wrote down yourself and never typed into a chat, keep what you’d carry in your pocket. Decentralization still needs plebs running nodes, and with AI a pleb can run one at a semi-professional level. A public Lightning provider is implemented but not yet proven end to end.</p>
+<p>The demo ran on DeepSeek because it is private and it follows a recipe. It is somewhat good at following instructions, and I don’t recommend it as the main agent. Two public boards, same test for every model on each. Left, real work in a terminal: the frontier models solve about two thirds of the tasks, DeepSeek about one third. Be fair to open weights: Kimi K3.1 Pro is level with the frontier here. Right, hard questions with no tools: nobody open is within reach. And on ARC-AGI-3, small games nobody explains, where the model has to work out the rules by itself, Fable 5.2 is at 81 percent and DeepSeek at 0.2. That is the skill you want when something on your server is not in the recipe. On privacy, say what PPQ says: the blue models go to hosts that contractually keep nothing; a frontier model through PPQ is anonymous, not private: the provider reads the prompt but sees PPQ, not you. PPQ also has models in sealed enclaves, but in our tests those could not use tools, so they cannot run an agent yet. A practical path: let the private model get the server up from a recipe, then bring in a frontier model for open-ended work and hardening. Don’t read the numbers to the decimal: other boards differ by several points, the order holds. Sources if asked: Vals AI for Terminal-Bench 4.0, Artificial Analysis for HLE-Diamond, the ARC Prize verified board. One minute.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-we-saw-them-do" class="slide level2">
+<h2>What we saw them do</h2>
+<div class="cols">
+<div class="card">
+<p><span class="card-title">DeepSeek V4.1-Flash, in our runs</span></p>
+<ul>
+<li>Said the node was “a few hours behind”. It was up to date.</li>
+<li>Said nobody could pay the node. One turn later, 2,000 sat arrived.</li>
+<li>Job already done: 63 more steps, until the credit ran out.</li>
+</ul>
+</div>
+<div class="card">
+<p><span class="card-title">Opus 5.5, same requests, no recipe</span></p>
+<ul>
+<li>Same first mistake: a node syncing from scratch, its port open to everyone.</li>
+<li>Then it looked around and found the prepared setup by itself.</li>
+<li>About twice as fast, in a third of the steps.</li>
+</ul>
+</div>
+</div>
+<p>The false claims were caught by <span class="accent">a second reader with a written checklist</span>, not by the model.</p>
+<div class="small">
+<p>One run each for the comparison, 21 November 2026. An anecdote, not a benchmark.</p>
+</div>
+<aside class="notes">
+<p>Tell one story from each card, not all six. DeepSeek: four times it told me the node’s chain was “a few hours behind” and “producing blocks on its own irregular schedule”; the chain was current, blocks were just slow that hour. Right after paying 5,000 sat out of its channel it said nobody could pay the node; one turn later it reported room for 5,002 sat and a 2,000 sat payment arrived. Told to change nothing else on a job that was already done, the set-up agent ran 63 steps for 55 minutes until the credit ran out, about 1.3 dollars. To be fair to it: no money was lost, it asked before every spend with the exact amount and fee, and once it had a recipe it followed it exactly. That recipe is the cost: a playbook of about 1,450 lines, shaped over more than 60 live runs. The comparison: the same two requests to both models on fresh machines with the recipes taken away. Both built a Bitcoin node syncing from scratch and opened its port to everyone, though a ready copy and a supported setup were on the machine. On the second request Opus looked around, found the supported setup and rebuilt on it without being told; DeepSeek read, refused to fund before the seed was confirmed, and asked. Opus was not clean either: it added a check nobody asked for and started a 12 GB download without asking. So recipes help every model; a frontier model needs fewer of them and recovers by looking around. Limits, if asked: one run each, cut short before any sign-in or payment. That is why every result is checked by something other than the AI. Ninety seconds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -616,7 +637,7 @@
 <li>Not “put everything online”. <span class="accent">Run what should be online, well.</span></li>
 </ul>
 <aside class="notes">
-<p>The demo node holds no funds. Two minutes.</p>
+<p>Two minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -651,24 +672,41 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="start-this-month" class="slide level2 section-title">
-<h2>Start this month</h2>
-</section>
-<section id="section-5" class="slide level2 center">
-<h2></h2>
+<section id="start-with-what-you-have" class="slide level2">
+<h2>Start with what you have</h2>
 <div class="cols">
 <div class="card">
-<p><span class="card-title">If you use it</span></p>
-<p>Rent one server. Pay in bitcoin. Let an AI help you run <span class="accent">one service</span> on it.</p>
+<p><span class="card-title">A laptop with Claude Code or Codex</span></p>
+<p><span class="accent">Start this month.</span> Rent one server, pay in bitcoin, give your agent SSH access, and ask it for one service.</p>
 </div>
 <div class="card">
-<p><span class="card-title">If you build it</span></p>
-<p>We need more services that take <span class="accent">Lightning</span> and have an API an AI in a browser can call.</p>
+<p><span class="card-title">Only a phone</span></p>
+<p><span class="accent">Farseed, soon.</span> It is alpha today, and not ready for you yet.</p>
 </div>
 </div>
-<p>A remote Linux server, operated by AI and paid for in bitcoin, is the missing piece of digital sovereignty.</p>
+<p>Experiment. It is a learning opportunity, for Bitcoin and for AI.</p>
 <aside class="notes">
-<p>Two calls to action. For builders, be concrete: accept Lightning, offer an API to order and start a machine with no human clicking through, and let browser pages call it. Those are exactly the obstacles this proof of concept ran into.</p>
+<p>Be straight about Farseed: it is an alpha on one prepared path, with our own provider. Say “soon”, not a month; there is no date. A public Lightning provider is implemented but not yet proven end to end. But nobody needs to wait for it. If you already have a frontier coding agent on a laptop, you can do today what the video showed: rent a small server, pay in bitcoin, give the agent SSH access, and ask it for one thing, a Bitcoin node for example. Start on a VPS, with nothing on it you can’t lose. If asked where to begin: the Farseed repository has the playbook the agents follow, and a laptop agent should be able to follow it too. Nobody has tried that yet, so say “should”. One minute.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="if-you-build-services" class="slide level2">
+<h2>If you build services</h2>
+<div class="big">
+<p>Take <span class="accent">Lightning</span>. Offer an <span class="accent">API</span> that an AI in a browser can call.</p>
+</div>
+<p>Each service that does is one more place a phone can start a server.</p>
+<aside class="notes">
+<p>The call to the builders in the room. Be concrete: accept Lightning, offer an API to order and start a machine with no human clicking through, and let browser pages call it. Those are exactly the obstacles this proof of concept ran into. Thirty seconds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -751,6 +789,32 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="thanks" class="slide level2">
+<h2>Thanks!</h2>
+<div class="thanks">
+<div class="thanks-text">
+<div class="big">
+<p>A remote Linux server, <span class="accent">operated by AI</span> and <span class="accent">paid for in bitcoin</span>, is the missing piece of digital sovereignty.</p>
+</div>
+<p>Slides: douglaz.github.io/sov-conf-slides</p>
+<p>Code: github.com/douglaz/farseed</p>
+</div>
+<p><img data-src="images/qr-slides.svg" class="qr"></p>
+</div>
+<aside class="notes">
+<p>The talk’s one sentence again, then stop. This slide stays up for questions. The QR code opens these slides, which include the list of tools by name.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="backup" class="slide level2 section-title" data-visibility="uncounted">
 <h2>Backup</h2>
 </section>
@@ -772,6 +836,97 @@
 <li>A supplier you can replace tomorrow is a different matter.</li>
 <li>On mobile: GrapheneOS, or something similar.</li>
 </ul>
+</section>
+<section id="open-source-alternatives" class="slide level2" data-visibility="uncounted">
+<h2>Open-source alternatives</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instead of…</th>
+<th>…you can run</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gmail, iCloud Mail</td>
+<td>Stalwart, mailcow, Mail-in-a-Box</td>
+</tr>
+<tr class="even">
+<td>iCloud, Google Drive, Dropbox</td>
+<td>Nextcloud, Immich for photos, Syncthing, restic for backups</td>
+</tr>
+<tr class="odd">
+<td>GitHub</td>
+<td>Forgejo, Gitea, Radicle</td>
+</tr>
+<tr class="even">
+<td>iMessage, WhatsApp, Telegram</td>
+<td>Matrix, SimpleX, your own Nostr relay</td>
+</tr>
+<tr class="odd">
+<td>An exchange</td>
+<td>Bitcoin Core, lnd or Core Lightning, your own keys</td>
+</tr>
+<tr class="even">
+<td>A hosted password manager</td>
+<td>Vaultwarden</td>
+</tr>
+</tbody>
+</table>
+<p>Mail and passwords are the hardest to run yourself. Start with <span class="accent">files or code</span>.</p>
+</section>
+<section id="other-ways-to-build-this-stack" class="slide level2" data-visibility="uncounted">
+<h2>Other ways to build this stack</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>In the demo</th>
+<th>Open alternatives</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Agent on the server</td>
+<td>Hermes Agent</td>
+<td>OpenCode, Goose</td>
+</tr>
+<tr class="even">
+<td>Inference</td>
+<td>PPQ</td>
+<td>Routstr, paid in ecash · Maple, in attested enclaves · your own, with llama.cpp</td>
+</tr>
+<tr class="odd">
+<td>Lightning</td>
+<td>lnd</td>
+<td>Core Lightning, LDK</td>
+</tr>
+<tr class="even">
+<td>Private network</td>
+<td>Tailscale</td>
+<td>Headscale, NetBird, plain WireGuard</td>
+</tr>
+<tr class="odd">
+<td>Bitcoin on NixOS</td>
+<td>our recipes</td>
+<td>nix-bitcoin</td>
+</tr>
+<tr class="even">
+<td>A node at home instead</td>
+<td></td>
+<td>StartOS, RaspiBlitz</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="where-this-could-go" class="slide level2" data-visibility="uncounted">
 <h2>Where this could go</h2>
