@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 372" font-family="Helvetica, Arial, sans-serif">
+  <g stroke="#f7931a" stroke-width="2" stroke-opacity="0.5">
+    <path d="M1000 186 L800 56"/>
+    <path d="M1000 186 L400 56"/>
+    <path d="M1000 186 L200 186"/>
+    <path d="M1000 186 L400 316"/>
+    <path d="M1000 186 L800 316"/>
+    <path d="M800 56 L400 56"/>
+    <path d="M800 56 L200 186"/>
+    <path d="M800 56 L400 316"/>
+    <path d="M800 56 L800 316"/>
+    <path d="M400 56 L200 186"/>
+    <path d="M400 56 L400 316"/>
+    <path d="M400 56 L800 316"/>
+    <path d="M200 186 L400 316"/>
+    <path d="M200 186 L800 316"/>
+    <path d="M400 316 L800 316"/>
+  </g>
+  <rect x="865" y="154" width="270" height="64" rx="32" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="1000" y="195" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">Nostr relay</text>
+  <rect x="665" y="24" width="270" height="64" rx="32" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="800" y="65" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">Tor relay</text>
+  <rect x="265" y="24" width="270" height="64" rx="32" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="400" y="65" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">Lightning node</text>
+  <rect x="65" y="154" width="270" height="64" rx="32" fill="#1f2630" stroke="#f7931a" stroke-width="4"/>
+  <text x="200" y="195" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">Your server</text>
+  <rect x="265" y="284" width="270" height="64" rx="32" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="400" y="325" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">Server hosting</text>
+  <rect x="665" y="284" width="270" height="64" rx="32" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="800" y="325" font-size="27" font-weight="bold" fill="#ffffff" text-anchor="middle">AI inference</text>
+</svg>

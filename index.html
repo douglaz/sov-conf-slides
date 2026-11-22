@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2cd3a99e4aea667c23633ba823fad756.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-92b4ca8ba48faf577ebf0a75cc0ff5bd.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -307,14 +307,58 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="section-5" class="slide level2 center">
+<h2></h2>
+<p><span class="step">Cypherpunks run servers</span></p>
+<blockquote>
+<p>People must come and together deploy these systems for the common good.</p>
+</blockquote>
+<div class="source">
+<p>Eric Hughes, “A Cypherpunk’s Manifesto” (1993)</p>
+</div>
+<aside class="notes">
+<p>Everyone remembers “Cypherpunks write code” from this manifesto. The same text says the code has to be deployed, by people, for each other. The first cypherpunk system was a server: the anonymous remailer Hughes wrote in 1992, to which Hal Finney added PGP. Say it in these words: operating servers is an essential cypherpunk skill. “come and together” is how the original reads. Twenty seconds. Second thing to drop if running late, after the serfs quote.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cyberspace-is-made-of-servers" class="slide level2">
+<h2>Cyberspace is made of servers</h2>
+<p><img data-src="images/servers.svg" class="diagram"></p>
+<div class="big">
+<p>We need these services run by <span class="accent">cypherpunks</span>.</p>
+</div>
+<aside class="notes">
+<p>It is not only your own mail and files. The networks we count on for freedom are servers too, and none of them is run by “the network”: each one is a machine that a person keeps running. Lightning is the most obvious example: a node has to be online to be paid and to route. A phone wallet manages by leaning on its vendor’s node; a shop that wants to take Lightning on its own terms needs a server. Tor: about 9,600 relays and 2,150 bridges on 22 November 2026, by Tor’s own count, run by volunteers. Bitcoin’s rules are enforced by the full nodes people run. Nostr is only as free as its relays. If we don’t run them, companies will, and then cyberspace is theirs. One minute.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="it-was-never-the-law.-it-was-skill." class="slide level2">
 <h2>It was never the law. It was skill.</h2>
 <p><img data-src="images/barrier.svg" class="diagram"></p>
+<p>Many people don’t support Lightning because they are <span class="accent">afraid of running a server</span>.</p>
 <div class="big">
 <p>That barrier is falling.</p>
 </div>
 <aside class="notes">
-<p>Keep “run Lightning safely” as the hard step here. Don’t promise it is solved.</p>
+<p>So why don’t we run them? Nobody forbids it. The top step is the answer: people who would take Lightning don’t, because it means running a server. Keep “run Lightning safely” as the hard step here. Don’t promise it is solved.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -374,7 +418,7 @@
 </div>
 <p>For keys and funds, still verify.</p>
 <aside class="notes">
-<p>“You were already following instructions you couldn’t question. Now you can follow ones you can.” Guard, said on purpose: you will see a lot of local, non-frontier AI at this conference. Don’t take its shortcomings to mean AI isn’t here yet. Judge it by the best model, not the weakest one in the room.</p>
+<p>“You were already following instructions you couldn’t question. Now you can follow ones you can.” Guard, said on purpose: you will see a lot of local, non-frontier AI at this conference. Don’t take its shortcomings to mean AI isn’t here yet. Judge it by the best model, not the weakest one in the room. And the skill doesn’t vanish: the AI operates and explains, and you learn to operate servers by doing it with one.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -395,7 +439,7 @@
 <p>At least one always-on remote Linux server. <span class="accent">AI operates it. Bitcoin pays for it.</span></p>
 <p><img data-src="images/stack.svg" class="diagram"></p>
 <aside class="notes">
-<p>From there: your own software factory, and businesses that exist only in cyberspace. One sentence, no more.</p>
+<p>From there: your own software factory, businesses that exist only in cyberspace, and services for other people, such as a Lightning node that routes or a relay. One sentence, no more.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -637,7 +681,7 @@
 <li>Not “put everything online”. <span class="accent">Run what should be online, well.</span></li>
 </ul>
 <aside class="notes">
-<p>Two minutes.</p>
+<p>On the third line: Lightning and Tor exist only online. Somebody runs those servers either way; the question is whether it is us, and whether we do it well. Two minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -684,29 +728,9 @@
 <p><span class="accent">Farseed, soon.</span> It is alpha today, and not ready for you yet.</p>
 </div>
 </div>
-<p>Experiment. It is a learning opportunity, for Bitcoin and for AI.</p>
+<p>Experiment. Operating servers is an <span class="accent">essential cypherpunk skill</span>, and this is how you learn it.</p>
 <aside class="notes">
-<p>Be straight about Farseed: it is an alpha on one prepared path, with our own provider. Say “soon”, not a month; there is no date. A public Lightning provider is implemented but not yet proven end to end. But nobody needs to wait for it. If you already have a frontier coding agent on a laptop, you can do today what the video showed: rent a small server, pay in bitcoin, give the agent SSH access, and ask it for one thing, a Bitcoin node for example. Start on a VPS, with nothing on it you can’t lose. If asked where to begin: the Farseed repository has the playbook the agents follow, and a laptop agent should be able to follow it too. Nobody has tried that yet, so say “should”. One minute.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="if-you-build-services" class="slide level2">
-<h2>If you build services</h2>
-<div class="big">
-<p>Take <span class="accent">Lightning</span>. Offer an <span class="accent">API</span> that an AI in a browser can call.</p>
-</div>
-<p>Each service that does is one more place a phone can start a server.</p>
-<aside class="notes">
-<p>The call to the builders in the room. Be concrete: accept Lightning, offer an API to order and start a machine with no human clicking through, and let browser pages call it. Those are exactly the obstacles this proof of concept ran into. Thirty seconds.</p>
+<p>Be straight about Farseed: it is an alpha on one prepared path, with our own provider. Say “soon”, not a month; there is no date. A public Lightning provider is implemented but not yet proven end to end. But nobody needs to wait for it. If you already have a frontier coding agent on a laptop, you can do today what the video showed: rent a small server, pay in bitcoin, give the agent SSH access, and ask it for one thing, a Bitcoin node for example. Start on a VPS, with nothing on it you can’t lose. If asked where to begin: the Farseed repository has the playbook the agents follow, and a laptop agent should be able to follow it too. Nobody has tried that yet, so say “should”. Say aloud that it is a learning opportunity, for Bitcoin and for AI. One minute.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -777,6 +801,27 @@
 </table>
 <aside class="notes">
 <p>The slide people photograph. Don’t read it out. Source public on GitHub.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cyberspace-must-be-ours" class="slide level2">
+<h2>Cyberspace must be ours</h2>
+<p><img data-src="images/network.svg" class="diagram"></p>
+<div class="big">
+<p>A network of <span class="accent">sovereign individuals</span>, providing services to each other.</p>
+</div>
+<p>If you build services: take <span class="accent">Lightning</span>, and offer an <span class="accent">API</span> that an AI in a browser can call.</p>
+<aside class="notes">
+<p>The close. Your own server is the first step; the point is the network. Lightning is the most obvious example: every node that stays online makes a payment possible for someone else. Tor is another: every relay is one person’s machine carrying strangers’ traffic. We need a network of sovereign individuals providing services to each other. That is how cyberspace becomes ours. To the builders in the room, be concrete: accept Lightning, offer an API to order and start a machine with no human clicking through, and let browser pages call it. Those are exactly the obstacles this proof of concept ran into. If someone asks how to help Tor: start with a bridge or a middle relay. An exit relay draws abuse complaints, so read the provider’s rules first. Forty-five seconds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
