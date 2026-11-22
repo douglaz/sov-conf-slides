@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Benchmark scores of three frontier models and four open-weight models offered on PPQ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Benchmark scores of four frontier models and four open-weight models offered on PPQ">
 <text x="290" y="30" fill="#ffffff" font-size="25" font-weight="700">Work in a terminal</text>
 <text x="290" y="60" fill="#9aa4b2" font-size="19">Terminal-Bench 4.0, tasks solved</text>
-<line x1="290" y1="86" x2="290" y2="384" stroke="#2a313c" stroke-width="2"/>
+<line x1="290" y1="86" x2="290" y2="424" stroke="#2a313c" stroke-width="2"/>
 <text x="760" y="30" fill="#ffffff" font-size="25" font-weight="700">Hard questions, no tools</text>
 <text x="760" y="60" fill="#9aa4b2" font-size="19">HLE-Diamond, answered correctly</text>
-<line x1="760" y1="86" x2="760" y2="384" stroke="#2a313c" stroke-width="2"/>
+<line x1="760" y1="86" x2="760" y2="424" stroke="#2a313c" stroke-width="2"/>
 <text x="268" y="115.0" text-anchor="end" fill="#e6e6e6" font-size="22">Claude Fable 5.2</text>
 <path d="M291,96 h242.6 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-242.6 z" fill="#d27a0f"/>
 <text x="547.6" y="115.0" fill="#e6e6e6" font-size="22">65.2%</text>
@@ -15,34 +15,39 @@
 <text x="547.6" y="155.0" fill="#e6e6e6" font-size="22">65.2%</text>
 <path d="M761,136 h253.0 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-253.0 z" fill="#d27a0f"/>
 <text x="1028.0" y="155.0" fill="#e6e6e6" font-size="22">67.9%</text>
-<text x="268" y="195.0" text-anchor="end" fill="#e6e6e6" font-size="22">GPT-6.2 Astra</text>
-<path d="M291,176 h234.9 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-234.9 z" fill="#d27a0f"/>
-<text x="539.9" y="195.0" fill="#e6e6e6" font-size="22">63.1%</text>
-<path d="M761,176 h269.4 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-269.4 z" fill="#d27a0f"/>
-<text x="1044.4" y="195.0" fill="#e6e6e6" font-size="22">72.2%</text>
-<text x="268" y="249.0" text-anchor="end" fill="#e6e6e6" font-size="22">Kimi K3.1 Pro</text>
-<path d="M291,230 h236.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-236.8 z" fill="#4a8fd0"/>
-<text x="541.8" y="249.0" fill="#e6e6e6" font-size="22">63.6%</text>
-<path d="M761,230 h136.7 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-136.7 z" fill="#4a8fd0"/>
-<text x="911.7" y="249.0" fill="#e6e6e6" font-size="22">37.3%</text>
-<text x="268" y="289.0" text-anchor="end" fill="#e6e6e6" font-size="22">GLM 5.3</text>
-<path d="M291,270 h142.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-142.8 z" fill="#4a8fd0"/>
-<text x="447.8" y="289.0" fill="#e6e6e6" font-size="22">38.9%</text>
-<path d="M761,270 h63.0 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-63.0 z" fill="#4a8fd0"/>
-<text x="838.0" y="289.0" fill="#e6e6e6" font-size="22">17.9%</text>
-<text x="268" y="329.0" text-anchor="end" fill="#ffffff" font-size="22" font-weight="700">DeepSeek V4.1 Flash</text>
-<path d="M291,310 h115.9 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-115.9 z" fill="#4a8fd0"/>
-<text x="420.9" y="329.0" fill="#e6e6e6" font-size="22">31.8%</text>
-<path d="M761,310 h91.1 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-91.1 z" fill="#4a8fd0"/>
-<text x="866.1" y="329.0" fill="#e6e6e6" font-size="22">25.3%</text>
-<text x="268" y="369.0" text-anchor="end" fill="#e6e6e6" font-size="22">MiniMax M3.1 Flash</text>
-<path d="M291,350 h91.0 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-91.0 z" fill="#4a8fd0"/>
-<text x="395.9" y="369.0" fill="#e6e6e6" font-size="22">25.3%</text>
-<path d="M761,350 h101.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-101.8 z" fill="#4a8fd0"/>
-<text x="876.8" y="369.0" fill="#e6e6e6" font-size="22">28.1%</text>
-<rect x="28" y="401" width="18" height="18" rx="3" fill="#d27a0f"/>
-<text x="54" y="416" fill="#e6e6e6" font-size="20">Frontier</text>
-<rect x="168" y="401" width="18" height="18" rx="3" fill="#4a8fd0"/>
-<text x="194" y="416" fill="#e6e6e6" font-size="20">Open weights, on PPQ's zero-retention routes</text>
-<text x="1200" y="416" text-anchor="end" fill="#9aa4b2" font-size="19">Vals AI, 19 Nov 2026 · Artificial Analysis, Nov 2026</text>
+<text x="268" y="195.0" text-anchor="end" fill="#e6e6e6" font-size="22">Claude Sonnet 5.5</text>
+<path d="M291,176 h238.7 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-238.7 z" fill="#d27a0f"/>
+<text x="543.7" y="195.0" fill="#e6e6e6" font-size="22">64.1%</text>
+<path d="M761,176 h197.5 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-197.5 z" fill="#d27a0f"/>
+<text x="972.5" y="195.0" fill="#e6e6e6" font-size="22">53.3%</text>
+<text x="268" y="235.0" text-anchor="end" fill="#e6e6e6" font-size="22">GPT-6.2 Astra</text>
+<path d="M291,216 h234.9 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-234.9 z" fill="#d27a0f"/>
+<text x="539.9" y="235.0" fill="#e6e6e6" font-size="22">63.1%</text>
+<path d="M761,216 h269.4 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-269.4 z" fill="#d27a0f"/>
+<text x="1044.4" y="235.0" fill="#e6e6e6" font-size="22">72.2%</text>
+<text x="268" y="289.0" text-anchor="end" fill="#e6e6e6" font-size="22">Kimi K3.1 Pro</text>
+<path d="M291,270 h236.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-236.8 z" fill="#4a8fd0"/>
+<text x="541.8" y="289.0" fill="#e6e6e6" font-size="22">63.6%</text>
+<path d="M761,270 h136.7 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-136.7 z" fill="#4a8fd0"/>
+<text x="911.7" y="289.0" fill="#e6e6e6" font-size="22">37.3%</text>
+<text x="268" y="329.0" text-anchor="end" fill="#e6e6e6" font-size="22">GLM 5.3</text>
+<path d="M291,310 h142.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-142.8 z" fill="#4a8fd0"/>
+<text x="447.8" y="329.0" fill="#e6e6e6" font-size="22">38.9%</text>
+<path d="M761,310 h63.0 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-63.0 z" fill="#4a8fd0"/>
+<text x="838.0" y="329.0" fill="#e6e6e6" font-size="22">17.9%</text>
+<text x="268" y="369.0" text-anchor="end" fill="#ffffff" font-size="22" font-weight="700">DeepSeek V4.1 Flash</text>
+<path d="M291,350 h115.9 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-115.9 z" fill="#4a8fd0"/>
+<text x="420.9" y="369.0" fill="#e6e6e6" font-size="22">31.8%</text>
+<path d="M761,350 h91.1 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-91.1 z" fill="#4a8fd0"/>
+<text x="866.1" y="369.0" fill="#e6e6e6" font-size="22">25.3%</text>
+<text x="268" y="409.0" text-anchor="end" fill="#e6e6e6" font-size="22">MiniMax M3.1 Flash</text>
+<path d="M291,390 h91.0 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-91.0 z" fill="#4a8fd0"/>
+<text x="395.9" y="409.0" fill="#e6e6e6" font-size="22">25.3%</text>
+<path d="M761,390 h101.8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-101.8 z" fill="#4a8fd0"/>
+<text x="876.8" y="409.0" fill="#e6e6e6" font-size="22">28.1%</text>
+<rect x="28" y="441" width="18" height="18" rx="3" fill="#d27a0f"/>
+<text x="54" y="456" fill="#e6e6e6" font-size="20">Frontier</text>
+<rect x="168" y="441" width="18" height="18" rx="3" fill="#4a8fd0"/>
+<text x="194" y="456" fill="#e6e6e6" font-size="20">Open weights, on PPQ's zero-retention routes</text>
+<text x="1200" y="456" text-anchor="end" fill="#9aa4b2" font-size="19">Vals AI, 19 Nov 2026 · Artificial Analysis, Nov 2026</text>
 </svg>
