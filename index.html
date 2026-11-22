@@ -632,44 +632,6 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-we-saw-them-do" class="slide level2">
-<h2>What we saw them do</h2>
-<div class="cols">
-<div class="card">
-<p><span class="card-title">DeepSeek V4.1 Flash, in our runs</span></p>
-<ul>
-<li>Said the node was “a few hours behind”. It was up to date.</li>
-<li>Said nobody could pay the node. One turn later, 2,000 sat arrived.</li>
-<li>Job already done: 63 more steps, until the credit ran out.</li>
-</ul>
-</div>
-<div class="card">
-<p><span class="card-title">Same job, four models, with the recipes</span></p>
-<ul>
-<li>All four used the prepared setup and asked about the seed backup before touching money.</li>
-<li>Sonnet 5.5, Kimi K3.1 Pro, Opus 5.5: all three sound. One run each, so their order means little.</li>
-<li>DeepSeek V4.1 Flash 1017 came last: it installed Lightning before asking.</li>
-</ul>
-</div>
-</div>
-<p>The false claims were caught by <span class="accent">a second reader with a written checklist</span>, not by the model.</p>
-<div class="small">
-<p>Right card: one run per model, scored blind, 22 November 2026, each stopped early. An anecdote, not a benchmark.</p>
-</div>
-<aside class="notes">
-<p>Tell one story from each card, not all six. Left card, DeepSeek in the long recorded run: four times it told me the node’s chain was “a few hours behind” and “producing blocks on its own irregular schedule”; the chain was current, blocks were just slow that hour. Right after paying 5,000 sat out of its channel it said nobody could pay the node; one turn later it reported room for 5,002 sat and a 2,000 sat payment arrived. Told to change nothing else on a job that was already done, the set-up agent ran 63 steps for 55 minutes until the credit ran out, about 1.3 dollars. To be fair to it: no money was lost, it asked before every spend with the exact amount and fee, and once it had a recipe it followed it exactly. That recipe is the cost: a playbook of about 1,450 lines, shaped over more than 60 live runs. Right card, 22 November: the same two requests, a Bitcoin node and then payments, to four models, each on a fresh test machine with the recipes in place, and a second reader scoring the four with the names hidden. All four used the prepared setup, and all four asked about the seed backup before touching money. The reader put Sonnet 5.5 first, Kimi K3.1 Pro a close second and Opus 5.5 third. Don’t make much of that order: Sonnet doing better than Opus is probably just random variability, it was one run each, and I wouldn’t call Sonnet frontier level in terms of intelligence; the chart’s hard-questions panel shows the gap. The one that stood apart was DeepSeek, the cheapest at 17 cents against Opus’s 79: it spent about eleven minutes installing and starting Lightning before its first question. We asked for the release of 17 October, the one on the chart; the left card’s quotes come from the product’s default entry. The service doesn’t confirm which release answers. The day before, with the recipes taken away, Opus 5.5 and DeepSeek both built a node syncing from scratch with its port open to everyone; on the next request Opus looked around and found the supported setup by itself. So recipes help every model. What a recipe cannot give is judgement: asking first, and reporting honestly. That is why every result is checked by something other than the AI. Limits, say them: one run per model, in full-access mode, where the agent may act without asking, and every request stopped early, so no payment was completed and nothing here is about speed or quality in general. On privacy: Sonnet and Opus went through PPQ’s anonymous tier, not zero retention; for Kimi, say zero retention is unverified by us. Ninety seconds.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="two-objections" class="slide level2 section-title">
 <h2>Two objections</h2>
 </section>
