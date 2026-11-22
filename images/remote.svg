@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" font-family="Helvetica, Arial, sans-serif">
+  <g fill="none" stroke="#f7931a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M498 44 L522 22 L546 44 M506 40 V64 H538 V40"/>
+    <rect x="850" y="24" width="44" height="16" rx="4"/><rect x="850" y="46" width="44" height="16" rx="4"/>
+    <path d="M860 32 h1 M860 54 h1"/>
+  </g>
+  <g font-size="22" letter-spacing="3" fill="#f7931a"><text x="30" y="52" fill="#9aa4b2">THREAT</text><text x="562" y="52">HOME AND LAPTOP</text><text x="912" y="52">REMOTE SERVER</text></g>
+  <rect x="4" y="92" width="1192" height="66" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="30" y="134" font-size="26" fill="#ffffff">Home is raided</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M512 115 l20 20 M532 115 l-20 20" stroke="#f85149"/></g>
+  <text x="562" y="134" font-size="26" font-weight="bold" fill="#ffffff">Lost</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M860 126 l8 9 l15 -20" stroke="#3fb950"/></g>
+  <text x="912" y="134" font-size="26" font-weight="bold" fill="#ffffff">Survives</text>
+  <rect x="4" y="168" width="1192" height="66" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="30" y="210" font-size="26" fill="#ffffff">Devices seized at a border</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M512 191 l20 20 M532 191 l-20 20" stroke="#f85149"/></g>
+  <text x="562" y="210" font-size="26" font-weight="bold" fill="#ffffff">Lost</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M860 190 l8 9 l15 -20" stroke="#3fb950"/></g>
+  <text x="912" y="198" font-size="26" font-weight="bold" fill="#ffffff">Survives</text>
+  <text x="912" y="221" font-size="19" fill="#9aa4b2">if your seed is backed up</text>
+  <rect x="4" y="244" width="1192" height="66" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="30" y="286" font-size="26" fill="#ffffff">Provider reaches the machine</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M510 278 l8 9 l15 -20" stroke="#3fb950"/></g>
+  <text x="562" y="286" font-size="26" font-weight="bold" fill="#ffffff">Not affected</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M862 267 l20 20 M882 267 l-20 20" stroke="#f85149"/></g>
+  <text x="912" y="286" font-size="26" font-weight="bold" fill="#ffffff">Exposed</text>
+  <rect x="4" y="320" width="1192" height="66" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <text x="30" y="362" font-size="26" fill="#ffffff">The jurisdiction turns hostile</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M509 353 H534 M525 344 L534 353 L525 362" stroke="#9aa4b2"/></g>
+  <text x="562" y="362" font-size="26" font-weight="bold" fill="#ffffff">Move yourself</text>
+  <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M859 353 H884 M875 344 L884 353 L875 362" stroke="#3fb950"/></g>
+  <text x="912" y="362" font-size="26" font-weight="bold" fill="#ffffff">Move the server</text>
+</svg>
