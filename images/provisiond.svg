@@ -47,7 +47,7 @@
   <rect x="958" y="351" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="356.5" r="1.8" fill="#9aa4b2"/>
   <rect x="958" y="366" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="371.5" r="1.8" fill="#9aa4b2"/>
   <g text-anchor="middle">
-    <g font-size="22" letter-spacing="3" fill="#f7931a"><text x="135" y="30">PEOPLE AND AIs</text><text x="600" y="30">MANY OPERATORS</text><text x="1060" y="30">MANY PROVIDERS</text></g>
+    <g font-size="22" letter-spacing="3" fill="#f7931a"><text x="135" y="30">PEOPLE AND AIs</text><text x="600" y="30">MANY PROVISIOND INSTANCES</text><text x="1060" y="30">MANY PROVIDERS</text></g>
     <g font-size="30" font-weight="bold" fill="#ffffff"><text x="600" y="124">provisiond</text><text x="600" y="234">provisiond</text><text x="600" y="344">provisiond</text></g>
     <g font-size="24" fill="#ffffff"><text x="1086" y="92">VPS</text><text x="1086" y="162">bare metal</text><text x="1086" y="232">VPS</text><text x="1086" y="302">bare metal</text><text x="1086" y="372">VPS</text></g>
     <g font-size="22" fill="#9aa4b2"><text x="345" y="424">one API, paid in bitcoin</text><text x="835" y="424">order and install</text></g>
