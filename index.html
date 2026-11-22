@@ -595,7 +595,7 @@
 <h2>What just happened</h2>
 <p><img data-src="images/architecture.svg" class="diagram tall"></p>
 <div class="small">
-<p>This run: DeepSeek V4.1-Flash through PPQ, on recipes I wrote.</p>
+<p>This run: DeepSeek V4.1 Flash through PPQ, on recipes I wrote.</p>
 </div>
 <aside class="notes">
 <p>One minute, pointing at the picture. The agent and my SSH keys stayed in my browser. What went out: model calls to PPQ, the server order to LNVPS, and an encrypted SSH session through our relay. T3 Code’s sign-in and Tailscale came after. The model host saw every command and its output; the relay saw only encrypted SSH. I paid both Lightning invoices by hand. Hermes has authority only on that server. On the model: name it here and move on. The next slide is about which model to use.</p>
@@ -616,7 +616,7 @@
 <p><img data-src="images/models.svg" class="diagram tall"></p>
 <p>DeepSeek follows a recipe. For the main agent, use a <span class="accent">frontier model</span>.</p>
 <div class="small">
-<p>Games nobody explains to the model (ARC-AGI-3): Fable 5.2 scores 81%, DeepSeek V4.1 Flash 0.2%.</p>
+<p>Games nobody explains to the model (ARC-AGI-3): Fable 5.2 scores 81%, DeepSeek V4.1 Flash 1017 0.2%.</p>
 </div>
 <aside class="notes">
 <p>The demo ran on DeepSeek because it is private and it follows a recipe. It is somewhat good at following instructions, and I don’t recommend it as the main agent. Two public boards, same test for every model on each. Left, real work in a terminal: the frontier models solve about two thirds of the tasks, DeepSeek about one third. Be fair to open weights: Kimi K3.1 Pro is level with the frontier here. Sonnet 5.5 is a point under the top on terminal work and well under Fable on hard questions; in our own test, next slide, it did best. Right, hard questions with no tools: nobody open is within reach. And on ARC-AGI-3, small games nobody explains, where the model has to work out the rules by itself, Fable 5.2 is at 81 percent and DeepSeek at 0.2. That is the skill you want when something on your server is not in the recipe. On privacy, say what PPQ says: the blue models go to hosts that contractually keep nothing; a frontier model through PPQ is anonymous, not private: the provider reads the prompt but sees PPQ, not you. PPQ also has models in sealed enclaves, but in our tests those could not use tools, so they cannot run an agent yet. A practical path: let the private model get the server up from a recipe, then bring in a frontier model for open-ended work and hardening. Don’t read the numbers to the decimal: other boards differ by several points, the order holds. Sources if asked: Vals AI for Terminal-Bench 4.0, Artificial Analysis for HLE-Diamond, the ARC Prize verified board. One minute.</p>
@@ -636,7 +636,7 @@
 <h2>What we saw them do</h2>
 <div class="cols">
 <div class="card">
-<p><span class="card-title">DeepSeek V4.1-Flash, in our runs</span></p>
+<p><span class="card-title">DeepSeek V4.1 Flash, in our runs</span></p>
 <ul>
 <li>Said the node was “a few hours behind”. It was up to date.</li>
 <li>Said nobody could pay the node. One turn later, 2,000 sat arrived.</li>
@@ -648,7 +648,7 @@
 <ul>
 <li><span class="accent">Sonnet 5.5</span> first: found what was already there, said what it had not confirmed.</li>
 <li>Kimi K3.1 Pro second. Opus 5.5 third, at over twice Sonnet’s cost.</li>
-<li>DeepSeek’s October release last: it installed Lightning before asking.</li>
+<li>DeepSeek V4.1 Flash 1017 last: it installed Lightning before asking.</li>
 </ul>
 </div>
 </div>
@@ -657,7 +657,7 @@
 <p>One run per model, with the recipes, 22 November 2026, each stopped early. An anecdote, not a benchmark.</p>
 </div>
 <aside class="notes">
-<p>Tell one story from each card, not all six. Left card, DeepSeek in the long recorded run: four times it told me the node’s chain was “a few hours behind” and “producing blocks on its own irregular schedule”; the chain was current, blocks were just slow that hour. Right after paying 5,000 sat out of its channel it said nobody could pay the node; one turn later it reported room for 5,002 sat and a 2,000 sat payment arrived. Told to change nothing else on a job that was already done, the set-up agent ran 63 steps for 55 minutes until the credit ran out, about 1.3 dollars. To be fair to it: no money was lost, it asked before every spend with the exact amount and fee, and once it had a recipe it followed it exactly. That recipe is the cost: a playbook of about 1,450 lines, shaped over more than 60 live runs. Right card, 22 November: the same two requests, a Bitcoin node and then payments, to four models, each on a fresh test machine with the recipes in place, and a second reader scoring the four with the names hidden. All four used the prepared setup, and all four asked about the seed backup before touching money. What was left was judgement. Sonnet 5.5 was the reader’s pick: it recognised the Bitcoin service that was already there and said plainly that the sync was not confirmed. Kimi K3.1 Pro was a close second. Opus 5.5 was sound and the fastest, came third, and cost the most: 79 cents against Sonnet’s 30. DeepSeek, the cheapest at 17 cents, installed and started Lightning for eleven minutes before its first question. That DeepSeek is the October release; the left card’s quotes come from the release the product uses by default. The day before, with the recipes taken away, Opus 5.5 and DeepSeek both built a node syncing from scratch with its port open to everyone; on the next request Opus looked around and found the supported setup by itself. So recipes help every model, and with them the difference is asking first and reporting honestly. Limits, say them: one run per model, every request stopped early, so no payment was completed and nothing here is about speed or quality in general. On privacy: Sonnet and Opus went through PPQ’s anonymous tier, not zero retention; for Kimi, say zero retention is unverified by us. That is why every result is checked by something other than the AI. Ninety seconds.</p>
+<p>Tell one story from each card, not all six. Left card, DeepSeek in the long recorded run: four times it told me the node’s chain was “a few hours behind” and “producing blocks on its own irregular schedule”; the chain was current, blocks were just slow that hour. Right after paying 5,000 sat out of its channel it said nobody could pay the node; one turn later it reported room for 5,002 sat and a 2,000 sat payment arrived. Told to change nothing else on a job that was already done, the set-up agent ran 63 steps for 55 minutes until the credit ran out, about 1.3 dollars. To be fair to it: no money was lost, it asked before every spend with the exact amount and fee, and once it had a recipe it followed it exactly. That recipe is the cost: a playbook of about 1,450 lines, shaped over more than 60 live runs. Right card, 22 November: the same two requests, a Bitcoin node and then payments, to four models, each on a fresh test machine with the recipes in place, and a second reader scoring the four with the names hidden. All four used the prepared setup, and all four asked about the seed backup before touching money. What was left was judgement. Sonnet 5.5 was the reader’s pick: it recognised the Bitcoin service that was already there and said plainly that the sync was not confirmed. Kimi K3.1 Pro was a close second. Opus 5.5 was sound and the fastest, came third, and cost the most: 79 cents against Sonnet’s 30. DeepSeek, the cheapest at 17 cents, installed and started Lightning for eleven minutes before its first question. That is the release of 17 October, the one on the chart; the left card’s quotes come from the release the product uses by default. The day before, with the recipes taken away, Opus 5.5 and DeepSeek both built a node syncing from scratch with its port open to everyone; on the next request Opus looked around and found the supported setup by itself. So recipes help every model, and with them the difference is asking first and reporting honestly. Limits, say them: one run per model, every request stopped early, so no payment was completed and nothing here is about speed or quality in general. On privacy: Sonnet and Opus went through PPQ’s anonymous tier, not zero retention; for Kimi, say zero retention is unverified by us. That is why every result is checked by something other than the AI. Ninety seconds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -703,7 +703,7 @@
 </ul>
 <p>Bootstrapping always starts on <span class="accent">something you don’t control</span>.</p>
 <aside class="notes">
-<p>Attested (TEE) inference may follow: that is a forecast, say so. Local models are the goal, not yet the tool for everything: don’t let their limits today tell you AI isn’t here. Two minutes.</p>
+<p>Attested (TEE) inference exists already, at PPQ and elsewhere, but in our tests those models could not use tools, so they cannot run an agent yet. Local models are the goal, not yet the tool for everything: don’t let their limits today tell you AI isn’t here. Two minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -845,7 +845,7 @@
 </tr>
 <tr class="even">
 <td>Inference, paid in Lightning</td>
-<td>PPQ (PayPerQ), running DeepSeek V4.1-Flash</td>
+<td>PPQ (PayPerQ), running DeepSeek V4.1 Flash</td>
 </tr>
 <tr class="odd">
 <td>Server, paid in Lightning</td>
@@ -853,7 +853,7 @@
 </tr>
 <tr class="even">
 <td>SSH relay for the browser</td>
-<td>paid-tcp-relay (MIT/Apache-2.0) · github.com/douglaz/paid-tcp-relay</td>
+<td>paid-tcp-relay (specification, MIT/Apache-2.0) · github.com/douglaz/paid-tcp-relay</td>
 </tr>
 <tr class="odd">
 <td>Operating system</td>
@@ -987,7 +987,7 @@
 <tr class="odd">
 <td>Bitcoin on NixOS</td>
 <td>our recipes</td>
-<td>nix-bitcoin</td>
+<td>nix-bitcoin (unmaintained since August 2026)</td>
 </tr>
 <tr class="even">
 <td>A node at home instead</td>
@@ -1009,7 +1009,7 @@
 <h2>Where are my keys in the browser?</h2>
 <ul>
 <li>An encrypted journal in the browser’s private file system: AES-256-GCM, key derived from your passphrase with PBKDF2, 600,000 rounds.</li>
-<li>While unlocked, the keys sit in a background worker. The visible page never gets them, and it holds no wallet.</li>
+<li>While unlocked, the keys sit in a background worker. The visible page holds no key and no wallet. It shows the recovery words once, when you back them up.</li>
 <li>Someone with your unlocked phone can use the app as you, but can’t read the keys out.</li>
 <li>A malicious extension could capture your passphrase as you type. Use a dedicated browser profile and a real passphrase.</li>
 </ul>
