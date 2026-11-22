@@ -1,34 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" font-family="Helvetica, Arial, sans-serif">
-  <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f7931a"/></marker>
-  </defs>
-  <g fill="#161b22" stroke="#3a4250" stroke-width="2">
-    <rect x="20" y="40" width="330" height="220" rx="14"/>
-    <rect x="435" y="40" width="330" height="220" rx="14" fill="#1f2630" stroke="#f7931a" stroke-width="4"/>
-    <rect x="850" y="40" width="330" height="220" rx="14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 436" font-family="Helvetica, Arial, sans-serif">
+  <g stroke="#f7931a" stroke-width="2.5" fill="none" opacity="0.85">
+    <path d="M114 104 L470 114"/>
+    <path d="M224 164 L470 114"/>
+    <path d="M224 164 L470 224"/>
+    <path d="M114 224 L470 224"/>
+    <path d="M224 284 L470 224"/>
+    <path d="M224 284 L470 334"/>
+    <path d="M114 344 L470 334"/>
   </g>
+  <g stroke="#6b7685" stroke-width="2.5" fill="none">
+    <path d="M730 114 L940 84"/>
+    <path d="M730 114 L940 154"/>
+    <path d="M730 114 L940 224"/>
+    <path d="M730 224 L940 154"/>
+    <path d="M730 224 L940 224"/>
+    <path d="M730 224 L940 294"/>
+    <path d="M730 334 L940 224"/>
+    <path d="M730 334 L940 294"/>
+    <path d="M730 334 L940 364"/>
+  </g>
+  <g fill="none" stroke="#c9d1d9" stroke-width="3.5" stroke-linecap="round">
+    <circle cx="80" cy="90" r="13"/><path d="M56 132 a24 24 0 0 1 48 0"/>
+    <circle cx="80" cy="210" r="13"/><path d="M56 252 a24 24 0 0 1 48 0"/>
+    <circle cx="80" cy="330" r="13"/><path d="M56 372 a24 24 0 0 1 48 0"/>
+  </g>
+  <g stroke="#f7931a" stroke-width="3.5" stroke-linecap="round">
+    <rect x="166" y="148" width="48" height="38" rx="9" fill="#161b22"/><path d="M190 148 V137" fill="none"/><circle cx="190" cy="134" r="3.5" fill="#f7931a"/><circle cx="180" cy="166" r="3.5" fill="#f7931a"/><circle cx="200" cy="166" r="3.5" fill="#f7931a"/>
+    <rect x="166" y="268" width="48" height="38" rx="9" fill="#161b22"/><path d="M190 268 V257" fill="none"/><circle cx="190" cy="254" r="3.5" fill="#f7931a"/><circle cx="180" cy="286" r="3.5" fill="#f7931a"/><circle cx="200" cy="286" r="3.5" fill="#f7931a"/>
+  </g>
+  <rect x="470" y="76" width="260" height="76" rx="14" fill="#1f2630" stroke="#f7931a" stroke-width="4"/>
+  <rect x="470" y="186" width="260" height="76" rx="14" fill="#1f2630" stroke="#f7931a" stroke-width="4"/>
+  <rect x="470" y="296" width="260" height="76" rx="14" fill="#1f2630" stroke="#f7931a" stroke-width="4"/>
+  <rect x="940" y="58" width="240" height="52" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <rect x="958" y="71" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="76.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="958" y="86" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="91.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="940" y="128" width="240" height="52" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <rect x="958" y="141" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="146.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="958" y="156" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="161.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="940" y="198" width="240" height="52" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <rect x="958" y="211" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="216.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="958" y="226" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="231.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="940" y="268" width="240" height="52" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <rect x="958" y="281" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="286.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="958" y="296" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="301.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="940" y="338" width="240" height="52" rx="10" fill="#161b22" stroke="#3a4250" stroke-width="2"/>
+  <rect x="958" y="351" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="356.5" r="1.8" fill="#9aa4b2"/>
+  <rect x="958" y="366" width="34" height="11" rx="3" fill="none" stroke="#9aa4b2" stroke-width="2.5"/><circle cx="966" cy="371.5" r="1.8" fill="#9aa4b2"/>
   <g text-anchor="middle">
-    <g fill="#f7931a" font-size="22" letter-spacing="3">
-      <text x="185" y="88">YOUR AI</text>
-      <text x="600" y="88">PROVISIOND</text>
-      <text x="1015" y="88">YOU GET</text>
-    </g>
-    <g fill="#ffffff" font-weight="bold" font-size="34">
-      <text x="185" y="148">calls one API,</text>
-      <text x="185" y="190">pays in bitcoin</text>
-      <text x="600" y="148">orders and installs</text>
-      <text x="600" y="190">the machine</text>
-      <text x="1015" y="148">a VPS or</text>
-      <text x="1015" y="190">bare metal</text>
-    </g>
-    <g fill="#9aa4b2" font-size="23">
-      <text x="185" y="232">no account at any provider</text>
-      <text x="600" y="232">somebody has to run it</text>
-      <text x="1015" y="232">at a provider it supports</text>
-    </g>
-  </g>
-  <g stroke="#f7931a" stroke-width="4" fill="none" marker-end="url(#a)">
-    <path d="M356 150 L428 150"/>
-    <path d="M771 150 L843 150"/>
+    <g font-size="22" letter-spacing="3" fill="#f7931a"><text x="135" y="30">PEOPLE AND AIs</text><text x="600" y="30">MANY OPERATORS</text><text x="1060" y="30">MANY PROVIDERS</text></g>
+    <g font-size="30" font-weight="bold" fill="#ffffff"><text x="600" y="124">provisiond</text><text x="600" y="234">provisiond</text><text x="600" y="344">provisiond</text></g>
+    <g font-size="24" fill="#ffffff"><text x="1086" y="92">VPS</text><text x="1086" y="162">bare metal</text><text x="1086" y="232">VPS</text><text x="1086" y="302">bare metal</text><text x="1086" y="372">VPS</text></g>
+    <g font-size="22" fill="#9aa4b2"><text x="345" y="424">one API, paid in bitcoin</text><text x="835" y="424">order and install</text></g>
   </g>
 </svg>
